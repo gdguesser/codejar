@@ -12,7 +12,9 @@ Rails.application.routes.draw do
     resources :marketplace, only: [:index]
     resources :blog, only: [:index]
 
-  devise_for :users
+  devise_for :users, controllers: {
+  	confirmations: 'confirmations'
+  }
   root to: 'home#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
