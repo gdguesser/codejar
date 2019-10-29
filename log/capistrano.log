@@ -1,0 +1,177 @@
+# Logfile created on 2019-10-29 00:19:55 -0300 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 00:19:55 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a4e6c49a] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@192.241.156.6
+ DEBUG [a4e6c49a] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [a4e6c49a] Finished in 5.392 seconds with exit status 0 (successful).
+ DEBUG [d249f140] Running /usr/bin/env which passenger as deploy@192.241.156.6
+ DEBUG [d249f140] Command: /usr/bin/env which passenger
+ DEBUG [d249f140] 	/usr/bin/passenger
+ DEBUG [d249f140] Finished in 1.221 seconds with exit status 0 (successful).
+  INFO [e7ef2296] Running /usr/bin/env mkdir -p /tmp as deploy@192.241.156.6
+ DEBUG [e7ef2296] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [e7ef2296] Finished in 1.128 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 100.0%
+  INFO [23e47020] Running /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh as deploy@192.241.156.6
+ DEBUG [23e47020] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh )
+  INFO [23e47020] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO [c0093fc2] Running /usr/bin/env git ls-remote https://github.com/gdguesser/ror-with-devise.git HEAD as deploy@192.241.156.6
+ DEBUG [c0093fc2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git ls-remote https://github.com/gdguesser/ror-with-devise.git HEAD )
+ DEBUG [c0093fc2] 	78310dd8ff9089c2ff4c6d19faea3d154be68559	HEAD
+  INFO [c0093fc2] Finished in 1.287 seconds with exit status 0 (successful).
+  INFO [802525ff] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases as deploy@192.241.156.6
+ DEBUG [802525ff] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases )
+  INFO [802525ff] Finished in 1.272 seconds with exit status 0 (successful).
+  INFO [15254400] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets as deploy@192.241.156.6
+ DEBUG [15254400] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets )
+  INFO [15254400] Finished in 1.127 seconds with exit status 0 (successful).
+ DEBUG [bf3c104d] Running [ -f /home/deploy/Codejar/current/REVISION ] as deploy@192.241.156.6
+ DEBUG [bf3c104d] Command: [ -f /home/deploy/Codejar/current/REVISION ]
+ DEBUG [bf3c104d] Finished in 1.225 seconds with exit status 1 (failed).
+ DEBUG [0b70fcb9] Running [ -f /home/deploy/Codejar/repo/HEAD ] as deploy@192.241.156.6
+ DEBUG [0b70fcb9] Command: [ -f /home/deploy/Codejar/repo/HEAD ]
+ DEBUG [0b70fcb9] Finished in 1.227 seconds with exit status 1 (failed).
+ DEBUG [367822c7] Running if test ! -d /home/deploy/Codejar; then echo "Directory does not exist '/home/deploy/Codejar'" 1>&2; false; fi as deploy@192.241.156.6
+ DEBUG [367822c7] Command: if test ! -d /home/deploy/Codejar; then echo "Directory does not exist '/home/deploy/Codejar'" 1>&2; false; fi
+ DEBUG [367822c7] Finished in 1.126 seconds with exit status 0 (successful).
+  INFO [951d8fe3] Running /usr/bin/env git clone --mirror https://github.com/gdguesser/ror-with-devise.git /home/deploy/Codejar/repo as deploy@192.241.156.6
+ DEBUG [951d8fe3] Command: cd /home/deploy/Codejar && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git clone --mirror https://github.com/gdguesser/ror-with-devise.git /home/deploy/Codejar/repo )
+ DEBUG [951d8fe3] 	Cloning into bare repository '/home/deploy/Codejar/repo'...
+  INFO [951d8fe3] Finished in 3.279 seconds with exit status 0 (successful).
+ DEBUG [50b79b78] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@192.241.156.6
+ DEBUG [50b79b78] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [50b79b78] Finished in 1.124 seconds with exit status 0 (successful).
+  INFO [a7bb03f6] Running /usr/bin/env git remote set-url origin https://github.com/gdguesser/ror-with-devise.git as deploy@192.241.156.6
+ DEBUG [a7bb03f6] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git remote set-url origin https://github.com/gdguesser/ror-with-devise.git )
+  INFO [a7bb03f6] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [f07928f9] Running /usr/bin/env git remote update --prune as deploy@192.241.156.6
+ DEBUG [f07928f9] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f07928f9] 	Fetching origin
+  INFO [f07928f9] Finished in 1.325 seconds with exit status 0 (successful).
+ DEBUG [ed05fbf9] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@192.241.156.6
+ DEBUG [ed05fbf9] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [ed05fbf9] Finished in 1.237 seconds with exit status 0 (successful).
+  INFO [3a37a672] Running /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029032011 as deploy@192.241.156.6
+ DEBUG [3a37a672] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029032011 )
+  INFO [3a37a672] Finished in 1.124 seconds with exit status 0 (successful).
+  INFO [62a721f1] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/Codejar/releases/20191029032011 as deploy@192.241.156.6
+ DEBUG [62a721f1] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/Codejar/releases/20191029032011 )
+  INFO [62a721f1] Finished in 2.559 seconds with exit status 0 (successful).
+ DEBUG [e089c650] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@192.241.156.6
+ DEBUG [e089c650] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [e089c650] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [ab2a0439] Running /usr/bin/env git rev-list --max-count=1 master as deploy@192.241.156.6
+ DEBUG [ab2a0439] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [ab2a0439] 	78310dd8ff9089c2ff4c6d19faea3d154be68559
+ DEBUG [ab2a0439] Finished in 1.235 seconds with exit status 0 (successful).
+ DEBUG [3e631365] Running if test ! -d /home/deploy/Codejar/releases/20191029032011; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029032011'" 1>&2; false; fi as deploy@192.241.156.6
+ DEBUG [3e631365] Command: if test ! -d /home/deploy/Codejar/releases/20191029032011; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029032011'" 1>&2; false; fi
+ DEBUG [3e631365] Finished in 1.219 seconds with exit status 0 (successful).
+  INFO [40f0e0c8] Running /usr/bin/env echo "78310dd8ff9089c2ff4c6d19faea3d154be68559" > REVISION as deploy@192.241.156.6
+ DEBUG [40f0e0c8] Command: cd /home/deploy/Codejar/releases/20191029032011 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env echo "78310dd8ff9089c2ff4c6d19faea3d154be68559" > REVISION )
+  INFO [40f0e0c8] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO [c8aa7c5b] Running /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029032011 /home/deploy/Codejar/releases/20191029032011/tmp /home/deploy/Codejar/releases/20191029032011/vendor /home/deploy/Codejar/releases/20191029032011/public as deploy@192.241.156.6
+ DEBUG [c8aa7c5b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029032011 /home/deploy/Codejar/releases/20191029032011/tmp /home/deploy/Codejar/releases/20191029032011/vendor /home/deploy/Codejar/releases/20191029032011/public )
+  INFO [c8aa7c5b] Finished in 1.232 seconds with exit status 0 (successful).
+ DEBUG [eb80f888] Running [ -L /home/deploy/Codejar/releases/20191029032011/log ] as deploy@192.241.156.6
+ DEBUG [eb80f888] Command: [ -L /home/deploy/Codejar/releases/20191029032011/log ]
+ DEBUG [eb80f888] Finished in 1.223 seconds with exit status 1 (failed).
+ DEBUG [e271029b] Running [ -d /home/deploy/Codejar/releases/20191029032011/log ] as deploy@192.241.156.6
+ DEBUG [e271029b] Command: [ -d /home/deploy/Codejar/releases/20191029032011/log ]
+ DEBUG [e271029b] Finished in 1.230 seconds with exit status 0 (successful).
+  INFO [73ab8402] Running /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029032011/log as deploy@192.241.156.6
+ DEBUG [73ab8402] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029032011/log )
+  INFO [73ab8402] Finished in 1.026 seconds with exit status 0 (successful).
+  INFO [fe587cd2] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/log /home/deploy/Codejar/releases/20191029032011/log as deploy@192.241.156.6
+ DEBUG [fe587cd2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/log /home/deploy/Codejar/releases/20191029032011/log )
+  INFO [fe587cd2] Finished in 1.224 seconds with exit status 0 (successful).
+ DEBUG [2e56cda8] Running [ -L /home/deploy/Codejar/releases/20191029032011/tmp/pids ] as deploy@192.241.156.6
+ DEBUG [2e56cda8] Command: [ -L /home/deploy/Codejar/releases/20191029032011/tmp/pids ]
+ DEBUG [2e56cda8] Finished in 1.229 seconds with exit status 1 (failed).
+ DEBUG [f10342bf] Running [ -d /home/deploy/Codejar/releases/20191029032011/tmp/pids ] as deploy@192.241.156.6
+ DEBUG [f10342bf] Command: [ -d /home/deploy/Codejar/releases/20191029032011/tmp/pids ]
+ DEBUG [f10342bf] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO [529b4dc1] Running /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029032011/tmp/pids as deploy@192.241.156.6
+ DEBUG [529b4dc1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029032011/tmp/pids )
+  INFO [529b4dc1] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [3a8b1328] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/releases/20191029032011/tmp/pids as deploy@192.241.156.6
+ DEBUG [3a8b1328] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/releases/20191029032011/tmp/pids )
+  INFO [3a8b1328] Finished in 1.227 seconds with exit status 0 (successful).
+ DEBUG [d31a61ca] Running [ -L /home/deploy/Codejar/releases/20191029032011/tmp/cache ] as deploy@192.241.156.6
+ DEBUG [d31a61ca] Command: [ -L /home/deploy/Codejar/releases/20191029032011/tmp/cache ]
+ DEBUG [d31a61ca] Finished in 1.228 seconds with exit status 1 (failed).
+ DEBUG [7afc58cd] Running [ -d /home/deploy/Codejar/releases/20191029032011/tmp/cache ] as deploy@192.241.156.6
+ DEBUG [7afc58cd] Command: [ -d /home/deploy/Codejar/releases/20191029032011/tmp/cache ]
+ DEBUG [7afc58cd] Finished in 1.230 seconds with exit status 0 (successful).
+  INFO [246d30c8] Running /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029032011/tmp/cache as deploy@192.241.156.6
+ DEBUG [246d30c8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029032011/tmp/cache )
+  INFO [246d30c8] Finished in 1.126 seconds with exit status 0 (successful).
+  INFO [63239825] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/releases/20191029032011/tmp/cache as deploy@192.241.156.6
+ DEBUG [63239825] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/releases/20191029032011/tmp/cache )
+  INFO [63239825] Finished in 1.229 seconds with exit status 0 (successful).
+ DEBUG [b13945ee] Running [ -L /home/deploy/Codejar/releases/20191029032011/tmp/sockets ] as deploy@192.241.156.6
+ DEBUG [b13945ee] Command: [ -L /home/deploy/Codejar/releases/20191029032011/tmp/sockets ]
+ DEBUG [b13945ee] Finished in 1.228 seconds with exit status 1 (failed).
+ DEBUG [49c98a33] Running [ -d /home/deploy/Codejar/releases/20191029032011/tmp/sockets ] as deploy@192.241.156.6
+ DEBUG [49c98a33] Command: [ -d /home/deploy/Codejar/releases/20191029032011/tmp/sockets ]
+ DEBUG [49c98a33] Finished in 1.228 seconds with exit status 1 (failed).
+  INFO [1d9718ba] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/releases/20191029032011/tmp/sockets as deploy@192.241.156.6
+ DEBUG [1d9718ba] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/releases/20191029032011/tmp/sockets )
+  INFO [1d9718ba] Finished in 1.126 seconds with exit status 0 (successful).
+ DEBUG [3e4ff662] Running [ -L /home/deploy/Codejar/releases/20191029032011/vendor/bundle ] as deploy@192.241.156.6
+ DEBUG [3e4ff662] Command: [ -L /home/deploy/Codejar/releases/20191029032011/vendor/bundle ]
+ DEBUG [3e4ff662] Finished in 1.126 seconds with exit status 1 (failed).
+ DEBUG [80d05b8d] Running [ -d /home/deploy/Codejar/releases/20191029032011/vendor/bundle ] as deploy@192.241.156.6
+ DEBUG [80d05b8d] Command: [ -d /home/deploy/Codejar/releases/20191029032011/vendor/bundle ]
+ DEBUG [80d05b8d] Finished in 1.126 seconds with exit status 1 (failed).
+  INFO [14490cec] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/releases/20191029032011/vendor/bundle as deploy@192.241.156.6
+ DEBUG [14490cec] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/releases/20191029032011/vendor/bundle )
+  INFO [14490cec] Finished in 1.229 seconds with exit status 0 (successful).
+ DEBUG [70e879a4] Running [ -L /home/deploy/Codejar/releases/20191029032011/.bundle ] as deploy@192.241.156.6
+ DEBUG [70e879a4] Command: [ -L /home/deploy/Codejar/releases/20191029032011/.bundle ]
+ DEBUG [70e879a4] Finished in 1.229 seconds with exit status 1 (failed).
+ DEBUG [649bbcb9] Running [ -d /home/deploy/Codejar/releases/20191029032011/.bundle ] as deploy@192.241.156.6
+ DEBUG [649bbcb9] Command: [ -d /home/deploy/Codejar/releases/20191029032011/.bundle ]
+ DEBUG [649bbcb9] Finished in 1.227 seconds with exit status 1 (failed).
+  INFO [217c9455] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/releases/20191029032011/.bundle as deploy@192.241.156.6
+ DEBUG [217c9455] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/releases/20191029032011/.bundle )
+  INFO [217c9455] Finished in 1.230 seconds with exit status 0 (successful).
+ DEBUG [66fc50d0] Running [ -L /home/deploy/Codejar/releases/20191029032011/public/system ] as deploy@192.241.156.6
+ DEBUG [66fc50d0] Command: [ -L /home/deploy/Codejar/releases/20191029032011/public/system ]
+ DEBUG [66fc50d0] Finished in 1.334 seconds with exit status 1 (failed).
+ DEBUG [e3e0477d] Running [ -d /home/deploy/Codejar/releases/20191029032011/public/system ] as deploy@192.241.156.6
+ DEBUG [e3e0477d] Command: [ -d /home/deploy/Codejar/releases/20191029032011/public/system ]
+ DEBUG [e3e0477d] Finished in 1.227 seconds with exit status 1 (failed).
+  INFO [d0f0b3d9] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/releases/20191029032011/public/system as deploy@192.241.156.6
+ DEBUG [d0f0b3d9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/releases/20191029032011/public/system )
+  INFO [d0f0b3d9] Finished in 1.020 seconds with exit status 0 (successful).
+ DEBUG [54460f4c] Running [ -L /home/deploy/Codejar/releases/20191029032011/public/uploads ] as deploy@192.241.156.6
+ DEBUG [54460f4c] Command: [ -L /home/deploy/Codejar/releases/20191029032011/public/uploads ]
+ DEBUG [54460f4c] Finished in 1.330 seconds with exit status 1 (failed).
+ DEBUG [c384edef] Running [ -d /home/deploy/Codejar/releases/20191029032011/public/uploads ] as deploy@192.241.156.6
+ DEBUG [c384edef] Command: [ -d /home/deploy/Codejar/releases/20191029032011/public/uploads ]
+ DEBUG [c384edef] Finished in 1.226 seconds with exit status 1 (failed).
+  INFO [30b85a31] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/releases/20191029032011/public/uploads as deploy@192.241.156.6
+ DEBUG [30b85a31] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/releases/20191029032011/public/uploads )
+  INFO [30b85a31] Finished in 2.063 seconds with exit status 0 (successful).
+ DEBUG [05b63778] Running [ -L /home/deploy/Codejar/releases/20191029032011/public/assets ] as deploy@192.241.156.6
+ DEBUG [05b63778] Command: [ -L /home/deploy/Codejar/releases/20191029032011/public/assets ]
+ DEBUG [05b63778] Finished in 1.065 seconds with exit status 1 (failed).
+ DEBUG [a4581c55] Running [ -d /home/deploy/Codejar/releases/20191029032011/public/assets ] as deploy@192.241.156.6
+ DEBUG [a4581c55] Command: [ -d /home/deploy/Codejar/releases/20191029032011/public/assets ]
+ DEBUG [a4581c55] Finished in 2.008 seconds with exit status 1 (failed).
+  INFO [870db9d6] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/assets /home/deploy/Codejar/releases/20191029032011/public/assets as deploy@192.241.156.6
+ DEBUG [870db9d6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/assets /home/deploy/Codejar/releases/20191029032011/public/assets )
+  INFO [870db9d6] Finished in 1.008 seconds with exit status 0 (successful).
+ DEBUG [fc7bd6f0] Running if test ! -d /home/deploy/Codejar/releases/20191029032011; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029032011'" 1>&2; false; fi as deploy@192.241.156.6
+ DEBUG [fc7bd6f0] Command: if test ! -d /home/deploy/Codejar/releases/20191029032011; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029032011'" 1>&2; false; fi
+ DEBUG [fc7bd6f0] Finished in 1.064 seconds with exit status 0 (successful).
+ DEBUG [3900c30c] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/Codejar/shared/bundle as deploy@192.241.156.6
+ DEBUG [3900c30c] Command: cd /home/deploy/Codejar/releases/20191029032011 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/Codejar/shared/bundle )
+ DEBUG [3900c30c] 	Your Ruby version is 2.6.5, but your Gemfile specified 2.5.1
+ DEBUG [3900c30c] Finished in 1.392 seconds with exit status 18 (failed).
+  INFO [5872cf74] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/Codejar/shared/bundle --jobs 4 --without development test --deployment --quiet as deploy@192.241.156.6
+ DEBUG [5872cf74] Command: cd /home/deploy/Codejar/releases/20191029032011 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/Codejar/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [5872cf74] 	Your Ruby version is 2.6.5, but your Gemfile specified 2.5.1
