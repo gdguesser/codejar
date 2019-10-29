@@ -2,7 +2,7 @@
 lock "~> 3.11.2"
 
 set :application, "Codejar"
-set :repo_url, "https://github.com/gdguesser/ror-with-devise.git"
+set :repo_url, "git@github.com:gdguesser/ror-with-devise.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
