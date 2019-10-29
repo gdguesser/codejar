@@ -1,4 +1,4 @@
-# Let's Build: With Ruby on Rails - Extending Devise Series
+Ruby on Rails - Extending Devise
 
 Building a web app with blog posts, marketplace area, etc...
 
