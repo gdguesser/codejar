@@ -1104,3 +1104,903 @@
   INFO ---------------------------------------------------------------------------
  DEBUG [ed50568b] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@192.241.156.6
  DEBUG [ed50568b] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 19:36:37 -0300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [297219ed] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@67.205.184.10
+ DEBUG [297219ed] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 19:38:46 -0300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ed620f0f] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@67.205.184.10
+ DEBUG [ed620f0f] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 19:39:29 -0300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f8df1881] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@142.93.72.43
+ DEBUG [f8df1881] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [f8df1881] Finished in 4.429 seconds with exit status 0 (successful).
+ DEBUG [dce51b0d] Running /usr/bin/env which passenger as deploy@142.93.72.43
+ DEBUG [dce51b0d] Command: /usr/bin/env which passenger
+ DEBUG [dce51b0d] 	/usr/bin/passenger
+ DEBUG [dce51b0d] Finished in 1.224 seconds with exit status 0 (successful).
+  INFO [172a660a] Running /usr/bin/env mkdir -p /tmp as deploy@142.93.72.43
+ DEBUG [172a660a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [172a660a] Finished in 1.130 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 100.0%
+  INFO [955294b1] Running /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh as deploy@142.93.72.43
+ DEBUG [955294b1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh )
+  INFO [955294b1] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [6a881e32] Running /usr/bin/env git ls-remote git@github.com:gdguesser/ror-with-devise.git HEAD as deploy@142.93.72.43
+ DEBUG [6a881e32] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git ls-remote git@github.com:gdguesser/ror-with-devise.git HEAD )
+ DEBUG [6a881e32] 	Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+ DEBUG [6a881e32] 	git@github.com: Permission denied (publickey).
+ DEBUG [6a881e32] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 19:40:24 -0300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [780daab8] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@142.93.72.43
+ DEBUG [780daab8] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [780daab8] Finished in 4.858 seconds with exit status 0 (successful).
+ DEBUG [5c64b47f] Running /usr/bin/env which passenger as deploy@142.93.72.43
+ DEBUG [5c64b47f] Command: /usr/bin/env which passenger
+ DEBUG [5c64b47f] 	/usr/bin/passenger
+ DEBUG [5c64b47f] Finished in 1.124 seconds with exit status 0 (successful).
+  INFO [6857bf4a] Running /usr/bin/env mkdir -p /tmp as deploy@142.93.72.43
+ DEBUG [6857bf4a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [6857bf4a] Finished in 1.227 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 100.0%
+  INFO [1614d55a] Running /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh as deploy@142.93.72.43
+ DEBUG [1614d55a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh )
+  INFO [1614d55a] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [6ab794da] Running /usr/bin/env git ls-remote https://github.com/gdguesser/codejar.git HEAD as deploy@142.93.72.43
+ DEBUG [6ab794da] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git ls-remote https://github.com/gdguesser/codejar.git HEAD )
+ DEBUG [6ab794da] 	5203aea83447de291d5d31c4960407ea06a5f92b	HEAD
+  INFO [6ab794da] Finished in 1.279 seconds with exit status 0 (successful).
+  INFO [dbbec0ee] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases as deploy@142.93.72.43
+ DEBUG [dbbec0ee] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases )
+  INFO [dbbec0ee] Finished in 1.280 seconds with exit status 0 (successful).
+  INFO [4c4e0e83] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets as deploy@142.93.72.43
+ DEBUG [4c4e0e83] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets )
+  INFO [4c4e0e83] Finished in 1.121 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 19:41:23 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b0b20c15] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@142.93.72.43
+ DEBUG [b0b20c15] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [b0b20c15] Finished in 4.904 seconds with exit status 0 (successful).
+ DEBUG [3b9b5cf8] Running /usr/bin/env which passenger as deploy@142.93.72.43
+ DEBUG [3b9b5cf8] Command: /usr/bin/env which passenger
+ DEBUG [3b9b5cf8] 	/usr/bin/passenger
+ DEBUG [3b9b5cf8] Finished in 1.225 seconds with exit status 0 (successful).
+  INFO [667e7eb0] Running /usr/bin/env mkdir -p /tmp as deploy@142.93.72.43
+ DEBUG [667e7eb0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [667e7eb0] Finished in 1.229 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 100.0%
+  INFO [50463ec5] Running /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh as deploy@142.93.72.43
+ DEBUG [50463ec5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh )
+  INFO [50463ec5] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO [2ba2ef7e] Running /usr/bin/env git ls-remote https://github.com/gdguesser/codejar.git HEAD as deploy@142.93.72.43
+ DEBUG [2ba2ef7e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git ls-remote https://github.com/gdguesser/codejar.git HEAD )
+ DEBUG [2ba2ef7e] 	5203aea83447de291d5d31c4960407ea06a5f92b	HEAD
+  INFO [2ba2ef7e] Finished in 1.254 seconds with exit status 0 (successful).
+  INFO [d8b8d76d] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases as deploy@142.93.72.43
+ DEBUG [d8b8d76d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases )
+  INFO [d8b8d76d] Finished in 1.202 seconds with exit status 0 (successful).
+  INFO [f359906b] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets as deploy@142.93.72.43
+ DEBUG [f359906b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets )
+  INFO [f359906b] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [7e7e111c] Running [ -f /home/deploy/Codejar/current/REVISION ] as deploy@142.93.72.43
+ DEBUG [7e7e111c] Command: [ -f /home/deploy/Codejar/current/REVISION ]
+ DEBUG [7e7e111c] Finished in 1.004 seconds with exit status 1 (failed).
+ DEBUG [253e6b52] Running [ -f /home/deploy/Codejar/repo/HEAD ] as deploy@142.93.72.43
+ DEBUG [253e6b52] Command: [ -f /home/deploy/Codejar/repo/HEAD ]
+ DEBUG [253e6b52] Finished in 1.244 seconds with exit status 1 (failed).
+ DEBUG [b0f0aca1] Running if test ! -d /home/deploy/Codejar; then echo "Directory does not exist '/home/deploy/Codejar'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [b0f0aca1] Command: if test ! -d /home/deploy/Codejar; then echo "Directory does not exist '/home/deploy/Codejar'" 1>&2; false; fi
+ DEBUG [b0f0aca1] Finished in 1.232 seconds with exit status 0 (successful).
+  INFO [e76494b0] Running /usr/bin/env git clone --mirror https://github.com/gdguesser/codejar.git /home/deploy/Codejar/repo as deploy@142.93.72.43
+ DEBUG [e76494b0] Command: cd /home/deploy/Codejar && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git clone --mirror https://github.com/gdguesser/codejar.git /home/deploy/Codejar/repo )
+ DEBUG [e76494b0] 	Cloning into bare repository '/home/deploy/Codejar/repo'...
+  INFO [e76494b0] Finished in 2.802 seconds with exit status 0 (successful).
+ DEBUG [e514e26d] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [e514e26d] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [e514e26d] Finished in 1.055 seconds with exit status 0 (successful).
+  INFO [44e5a9f3] Running /usr/bin/env git remote set-url origin https://github.com/gdguesser/codejar.git as deploy@142.93.72.43
+ DEBUG [44e5a9f3] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git remote set-url origin https://github.com/gdguesser/codejar.git )
+  INFO [44e5a9f3] Finished in 1.258 seconds with exit status 0 (successful).
+  INFO [59ece700] Running /usr/bin/env git remote update --prune as deploy@142.93.72.43
+ DEBUG [59ece700] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [59ece700] 	Fetching origin
+  INFO [59ece700] Finished in 1.231 seconds with exit status 0 (successful).
+ DEBUG [ebad5815] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [ebad5815] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [ebad5815] Finished in 2.248 seconds with exit status 0 (successful).
+  INFO [2168fc50] Running /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029224139 as deploy@142.93.72.43
+ DEBUG [2168fc50] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029224139 )
+  INFO [2168fc50] Finished in 1.505 seconds with exit status 0 (successful).
+  INFO [e07ede85] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/Codejar/releases/20191029224139 as deploy@142.93.72.43
+ DEBUG [e07ede85] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/Codejar/releases/20191029224139 )
+  INFO [e07ede85] Finished in 2.286 seconds with exit status 0 (successful).
+ DEBUG [79a0c345] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [79a0c345] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [79a0c345] Finished in 1.230 seconds with exit status 0 (successful).
+ DEBUG [8d8448d8] Running /usr/bin/env git rev-list --max-count=1 master as deploy@142.93.72.43
+ DEBUG [8d8448d8] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [8d8448d8] 	5203aea83447de291d5d31c4960407ea06a5f92b
+ DEBUG [8d8448d8] Finished in 1.120 seconds with exit status 0 (successful).
+ DEBUG [f10cd8ad] Running if test ! -d /home/deploy/Codejar/releases/20191029224139; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224139'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [f10cd8ad] Command: if test ! -d /home/deploy/Codejar/releases/20191029224139; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224139'" 1>&2; false; fi
+ DEBUG [f10cd8ad] Finished in 1.231 seconds with exit status 0 (successful).
+  INFO [007e50d3] Running /usr/bin/env echo "5203aea83447de291d5d31c4960407ea06a5f92b" > REVISION as deploy@142.93.72.43
+ DEBUG [007e50d3] Command: cd /home/deploy/Codejar/releases/20191029224139 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env echo "5203aea83447de291d5d31c4960407ea06a5f92b" > REVISION )
+  INFO [007e50d3] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [174811b8] Running /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029224139 /home/deploy/Codejar/releases/20191029224139/tmp /home/deploy/Codejar/releases/20191029224139/vendor /home/deploy/Codejar/releases/20191029224139/public as deploy@142.93.72.43
+ DEBUG [174811b8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029224139 /home/deploy/Codejar/releases/20191029224139/tmp /home/deploy/Codejar/releases/20191029224139/vendor /home/deploy/Codejar/releases/20191029224139/public )
+  INFO [174811b8] Finished in 1.061 seconds with exit status 0 (successful).
+ DEBUG [c405ae77] Running [ -L /home/deploy/Codejar/releases/20191029224139/log ] as deploy@142.93.72.43
+ DEBUG [c405ae77] Command: [ -L /home/deploy/Codejar/releases/20191029224139/log ]
+ DEBUG [c405ae77] Finished in 1.090 seconds with exit status 1 (failed).
+ DEBUG [f17fe229] Running [ -d /home/deploy/Codejar/releases/20191029224139/log ] as deploy@142.93.72.43
+ DEBUG [f17fe229] Command: [ -d /home/deploy/Codejar/releases/20191029224139/log ]
+ DEBUG [f17fe229] Finished in 1.225 seconds with exit status 0 (successful).
+  INFO [4cd008d5] Running /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029224139/log as deploy@142.93.72.43
+ DEBUG [4cd008d5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029224139/log )
+  INFO [4cd008d5] Finished in 1.231 seconds with exit status 0 (successful).
+  INFO [3b7a42e4] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/log /home/deploy/Codejar/releases/20191029224139/log as deploy@142.93.72.43
+ DEBUG [3b7a42e4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/log /home/deploy/Codejar/releases/20191029224139/log )
+  INFO [3b7a42e4] Finished in 1.226 seconds with exit status 0 (successful).
+ DEBUG [4deccbeb] Running [ -L /home/deploy/Codejar/releases/20191029224139/tmp/pids ] as deploy@142.93.72.43
+ DEBUG [4deccbeb] Command: [ -L /home/deploy/Codejar/releases/20191029224139/tmp/pids ]
+ DEBUG [4deccbeb] Finished in 1.026 seconds with exit status 1 (failed).
+ DEBUG [a5e2288f] Running [ -d /home/deploy/Codejar/releases/20191029224139/tmp/pids ] as deploy@142.93.72.43
+ DEBUG [a5e2288f] Command: [ -d /home/deploy/Codejar/releases/20191029224139/tmp/pids ]
+ DEBUG [a5e2288f] Finished in 1.124 seconds with exit status 1 (failed).
+  INFO [aba1b5d2] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/releases/20191029224139/tmp/pids as deploy@142.93.72.43
+ DEBUG [aba1b5d2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/releases/20191029224139/tmp/pids )
+  INFO [aba1b5d2] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [404faea8] Running [ -L /home/deploy/Codejar/releases/20191029224139/tmp/cache ] as deploy@142.93.72.43
+ DEBUG [404faea8] Command: [ -L /home/deploy/Codejar/releases/20191029224139/tmp/cache ]
+ DEBUG [404faea8] Finished in 1.227 seconds with exit status 1 (failed).
+ DEBUG [a9fe9738] Running [ -d /home/deploy/Codejar/releases/20191029224139/tmp/cache ] as deploy@142.93.72.43
+ DEBUG [a9fe9738] Command: [ -d /home/deploy/Codejar/releases/20191029224139/tmp/cache ]
+ DEBUG [a9fe9738] Finished in 1.332 seconds with exit status 0 (successful).
+  INFO [1074b94f] Running /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029224139/tmp/cache as deploy@142.93.72.43
+ DEBUG [1074b94f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029224139/tmp/cache )
+  INFO [1074b94f] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [9202e698] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/releases/20191029224139/tmp/cache as deploy@142.93.72.43
+ DEBUG [9202e698] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/releases/20191029224139/tmp/cache )
+  INFO [9202e698] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [9bac4599] Running [ -L /home/deploy/Codejar/releases/20191029224139/tmp/sockets ] as deploy@142.93.72.43
+ DEBUG [9bac4599] Command: [ -L /home/deploy/Codejar/releases/20191029224139/tmp/sockets ]
+ DEBUG [9bac4599] Finished in 1.230 seconds with exit status 1 (failed).
+ DEBUG [d5baf8b8] Running [ -d /home/deploy/Codejar/releases/20191029224139/tmp/sockets ] as deploy@142.93.72.43
+ DEBUG [d5baf8b8] Command: [ -d /home/deploy/Codejar/releases/20191029224139/tmp/sockets ]
+ DEBUG [d5baf8b8] Finished in 1.230 seconds with exit status 1 (failed).
+  INFO [f8774f4f] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/releases/20191029224139/tmp/sockets as deploy@142.93.72.43
+ DEBUG [f8774f4f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/releases/20191029224139/tmp/sockets )
+  INFO [f8774f4f] Finished in 1.020 seconds with exit status 0 (successful).
+ DEBUG [5276b03e] Running [ -L /home/deploy/Codejar/releases/20191029224139/vendor/bundle ] as deploy@142.93.72.43
+ DEBUG [5276b03e] Command: [ -L /home/deploy/Codejar/releases/20191029224139/vendor/bundle ]
+ DEBUG [5276b03e] Finished in 1.745 seconds with exit status 1 (failed).
+ DEBUG [4548757a] Running [ -d /home/deploy/Codejar/releases/20191029224139/vendor/bundle ] as deploy@142.93.72.43
+ DEBUG [4548757a] Command: [ -d /home/deploy/Codejar/releases/20191029224139/vendor/bundle ]
+ DEBUG [4548757a] Finished in 1.635 seconds with exit status 1 (failed).
+  INFO [c07459b6] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/releases/20191029224139/vendor/bundle as deploy@142.93.72.43
+ DEBUG [c07459b6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/releases/20191029224139/vendor/bundle )
+  INFO [c07459b6] Finished in 1.843 seconds with exit status 0 (successful).
+ DEBUG [de57124e] Running [ -L /home/deploy/Codejar/releases/20191029224139/.bundle ] as deploy@142.93.72.43
+ DEBUG [de57124e] Command: [ -L /home/deploy/Codejar/releases/20191029224139/.bundle ]
+ DEBUG [de57124e] Finished in 1.535 seconds with exit status 1 (failed).
+ DEBUG [b0c7396a] Running [ -d /home/deploy/Codejar/releases/20191029224139/.bundle ] as deploy@142.93.72.43
+ DEBUG [b0c7396a] Command: [ -d /home/deploy/Codejar/releases/20191029224139/.bundle ]
+ DEBUG [b0c7396a] Finished in 1.123 seconds with exit status 1 (failed).
+  INFO [f68bab4c] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/releases/20191029224139/.bundle as deploy@142.93.72.43
+ DEBUG [f68bab4c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/releases/20191029224139/.bundle )
+  INFO [f68bab4c] Finished in 1.743 seconds with exit status 0 (successful).
+ DEBUG [68d4b502] Running [ -L /home/deploy/Codejar/releases/20191029224139/public/system ] as deploy@142.93.72.43
+ DEBUG [68d4b502] Command: [ -L /home/deploy/Codejar/releases/20191029224139/public/system ]
+ DEBUG [68d4b502] Finished in 1.637 seconds with exit status 1 (failed).
+ DEBUG [5debfef2] Running [ -d /home/deploy/Codejar/releases/20191029224139/public/system ] as deploy@142.93.72.43
+ DEBUG [5debfef2] Command: [ -d /home/deploy/Codejar/releases/20191029224139/public/system ]
+ DEBUG [5debfef2] Finished in 1.229 seconds with exit status 1 (failed).
+  INFO [b0283936] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/releases/20191029224139/public/system as deploy@142.93.72.43
+ DEBUG [b0283936] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/releases/20191029224139/public/system )
+  INFO [b0283936] Finished in 1.198 seconds with exit status 0 (successful).
+ DEBUG [cadb8fe0] Running [ -L /home/deploy/Codejar/releases/20191029224139/public/uploads ] as deploy@142.93.72.43
+ DEBUG [cadb8fe0] Command: [ -L /home/deploy/Codejar/releases/20191029224139/public/uploads ]
+ DEBUG [cadb8fe0] Finished in 1.257 seconds with exit status 1 (failed).
+ DEBUG [032b37a5] Running [ -d /home/deploy/Codejar/releases/20191029224139/public/uploads ] as deploy@142.93.72.43
+ DEBUG [032b37a5] Command: [ -d /home/deploy/Codejar/releases/20191029224139/public/uploads ]
+ DEBUG [032b37a5] Finished in 1.118 seconds with exit status 1 (failed).
+  INFO [cd7807d5] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/releases/20191029224139/public/uploads as deploy@142.93.72.43
+ DEBUG [cd7807d5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/releases/20191029224139/public/uploads )
+  INFO [cd7807d5] Finished in 1.235 seconds with exit status 0 (successful).
+ DEBUG [0a2ae735] Running [ -L /home/deploy/Codejar/releases/20191029224139/public/assets ] as deploy@142.93.72.43
+ DEBUG [0a2ae735] Command: [ -L /home/deploy/Codejar/releases/20191029224139/public/assets ]
+ DEBUG [0a2ae735] Finished in 1.230 seconds with exit status 1 (failed).
+ DEBUG [15cf21e6] Running [ -d /home/deploy/Codejar/releases/20191029224139/public/assets ] as deploy@142.93.72.43
+ DEBUG [15cf21e6] Command: [ -d /home/deploy/Codejar/releases/20191029224139/public/assets ]
+ DEBUG [15cf21e6] Finished in 1.229 seconds with exit status 1 (failed).
+  INFO [364b359a] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/assets /home/deploy/Codejar/releases/20191029224139/public/assets as deploy@142.93.72.43
+ DEBUG [364b359a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/assets /home/deploy/Codejar/releases/20191029224139/public/assets )
+  INFO [364b359a] Finished in 1.234 seconds with exit status 0 (successful).
+ DEBUG [ffd7e409] Running if test ! -d /home/deploy/Codejar/releases/20191029224139; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224139'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [ffd7e409] Command: if test ! -d /home/deploy/Codejar/releases/20191029224139; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224139'" 1>&2; false; fi
+ DEBUG [ffd7e409] Finished in 1.017 seconds with exit status 0 (successful).
+ DEBUG [ff6f43a1] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/Codejar/shared/bundle as deploy@142.93.72.43
+ DEBUG [ff6f43a1] Command: cd /home/deploy/Codejar/releases/20191029224139 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/Codejar/shared/bundle )
+ DEBUG [ff6f43a1] 	Resolving dependencies...
+ DEBUG [ff6f43a1] 	
+ DEBUG [ff6f43a1] 	The following gems are missing
+ DEBUG [ff6f43a1] 	 * rake (12.3.3)
+ DEBUG [ff6f43a1] 	 * multipart-post (2.1.1)
+ DEBUG [ff6f43a1] 	 * faraday (0.17.0)
+ DEBUG [ff6f43a1] 	 * json (2.2.0)
+ DEBUG [ff6f43a1] 	 * PriorityQueue (0.1.2)
+ DEBUG [ff6f43a1] 	 * lrucache (0.1.4)
+ DEBUG [ff6f43a1] 	 * IPinfo (0.1.2)
+ DEBUG [ff6f43a1] 	 * concurrent-ruby (1.1.5)
+ DEBUG [ff6f43a1] 	 * i18n (1.7.0)
+ DEBUG [ff6f43a1] 	 * minitest (5.12.2)
+ DEBUG [ff6f43a1] 	 * thread_safe (0.3.6)
+ DEBUG [ff6f43a1] 	 * tzinfo (1.2.5)
+ DEBUG [ff6f43a1] 	 * zeitwerk (2.2.0)
+ DEBUG [ff6f43a1] 	 * activesupport (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * builder (3.2.3)
+ DEBUG [ff6f43a1] 	 * erubi (1.9.0)
+ DEBUG [ff6f43a1] 	 * mini_portile2 (2.4.0)
+ DEBUG [ff6f43a1] 	 * nokogiri (1.10.4)
+ DEBUG [ff6f43a1] 	 * rails-dom-testing (2.0.3)
+ DEBUG [ff6f43a1] 	 * crass (1.0.5)
+ DEBUG [ff6f43a1] 	 * loofah (2.3.1)
+ DEBUG [ff6f43a1] 	 * rails-html-sanitizer (1.3.0)
+ DEBUG [ff6f43a1] 	 * actionview (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * rack (2.0.7)
+ DEBUG [ff6f43a1] 	 * rack-test (1.1.0)
+ DEBUG [ff6f43a1] 	 * actionpack (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * nio4r (2.4.0)
+ DEBUG [ff6f43a1] 	 * websocket-extensions (0.1.4)
+ DEBUG [ff6f43a1] 	 * websocket-driver (0.7.1)
+ DEBUG [ff6f43a1] 	 * actioncable (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * globalid (0.4.2)
+ DEBUG [ff6f43a1] 	 * activejob (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * activemodel (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * activerecord (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * mimemagic (0.3.3)
+ DEBUG [ff6f43a1] 	 * marcel (0.3.3)
+ DEBUG [ff6f43a1] 	 * activestorage (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * mini_mime (1.0.2)
+ DEBUG [ff6f43a1] 	 * mail (2.7.1)
+ DEBUG [ff6f43a1] 	 * actionmailbox (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * actionmailer (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * actiontext (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * public_suffix (3.1.1)
+ DEBUG [ff6f43a1] 	 * addressable (2.6.0)
+ DEBUG [ff6f43a1] 	 * net-ssh (5.2.0)
+ DEBUG [ff6f43a1] 	 * net-scp (2.0.0)
+ DEBUG [ff6f43a1] 	 * sshkit (1.20.0)
+ DEBUG [ff6f43a1] 	 * airbrussh (1.4.0)
+ DEBUG [ff6f43a1] 	 * bcrypt (3.1.13)
+ DEBUG [ff6f43a1] 	 * coderay (1.1.2)
+ DEBUG [ff6f43a1] 	 * better_errors (2.5.1)
+ DEBUG [ff6f43a1] 	 * bindex (0.8.1)
+ DEBUG [ff6f43a1] 	 * msgpack (1.3.1)
+ DEBUG [ff6f43a1] 	 * bootsnap (1.4.4)
+ DEBUG [ff6f43a1] 	 * byebug (11.0.1)
+ DEBUG [ff6f43a1] 	 * capistrano (3.11.2)
+ DEBUG [ff6f43a1] 	 * capistrano-bundler (1.6.0)
+ DEBUG [ff6f43a1] 	 * capistrano-passenger (0.2.0)
+ DEBUG [ff6f43a1] 	 * capistrano-rails (1.4.0)
+ DEBUG [ff6f43a1] 	 * capistrano-rbenv (2.1.4)
+ DEBUG [ff6f43a1] 	 * regexp_parser (1.6.0)
+ DEBUG [ff6f43a1] 	 * xpath (3.2.0)
+ DEBUG [ff6f43a1] 	 * capybara (3.28.0)
+ DEBUG [ff6f43a1] 	 * childprocess (1.0.1)
+ DEBUG [ff6f43a1] 	 * connection_pool (2.2.2)
+ DEBUG [ff6f43a1] 	 * orm_adapter (0.5.0)
+ DEBUG [ff6f43a1] 	 * method_source (0.9.2)
+ DEBUG [ff6f43a1] 	 * thor (0.20.3)
+ DEBUG [ff6f43a1] 	 * railties (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * responders (3.0.0)
+ DEBUG [ff6f43a1] 	 * warden (1.2.8)
+ DEBUG [ff6f43a1] 	 * devise (4.7.1)
+ DEBUG [ff6f43a1] 	 * ffi (1.11.1)
+ DEBUG [ff6f43a1] 	 * friendly_id (5.2.5)
+ DEBUG [ff6f43a1] 	 * ipinfo-rails (0.1.1)
+ DEBUG [ff6f43a1] 	 * jbuilder (2.9.1)
+ DEBUG [ff6f43a1] 	 * rb-fsevent (0.10.3)
+ DEBUG [ff6f43a1] 	 * rb-inotify (0.10.0)
+ DEBUG [ff6f43a1] 	 * ruby_dep (1.5.0)
+ DEBUG [ff6f43a1] 	 * listen (3.1.5)
+ DEBUG [ff6f43a1] 	 * pg (1.1.4)
+ DEBUG [ff6f43a1] 	 * puma (3.12.1)
+ DEBUG [ff6f43a1] 	 * rack-protection (2.0.5)
+ DEBUG [ff6f43a1] 	 * rack-proxy (0.6.5)
+ DEBUG [ff6f43a1] 	 * sprockets (3.7.2)
+ DEBUG [ff6f43a1] 	 * sprockets-rails (3.2.1)
+ DEBUG [ff6f43a1] 	 * rails (6.0.0.rc2)
+ DEBUG [ff6f43a1] 	 * redis (4.1.2)
+ DEBUG [ff6f43a1] 	 * rubyzip (1.3.0)
+ DEBUG [ff6f43a1] 	 * sass-listen (4.0.0)
+ DEBUG [ff6f43a1] 	 * sass (3.7.4)
+ DEBUG [ff6f43a1] 	 * tilt (2.0.9)
+ DEBUG [ff6f43a1] 	 * sass-rails (5.0.7)
+ DEBUG [ff6f43a1] 	 * selenium-webdriver (3.142.3)
+ DEBUG [ff6f43a1] 	 * sidekiq (5.2.7)
+ DEBUG [ff6f43a1] 	 * spring (2.1.0)
+ DEBUG [ff6f43a1] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [ff6f43a1] 	 * sqlite3 (1.4.1)
+ DEBUG [ff6f43a1] 	 * turbolinks-source (5.2.0)
+ DEBUG [ff6f43a1] 	 * turbolinks (5.2.0)
+ DEBUG [ff6f43a1] 	 * web-console (4.0.0)
+ DEBUG [ff6f43a1] 	 * webdrivers (4.1.2)
+ DEBUG [ff6f43a1] 	 * webpacker (4.0.7)
+ DEBUG [ff6f43a1] 	Install missing gems with `bundle install`
+ DEBUG [ff6f43a1] Finished in 2.084 seconds with exit status 1 (failed).
+  INFO [ab2262ec] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/Codejar/shared/bundle --jobs 4 --without development test --deployment --quiet as deploy@142.93.72.43
+ DEBUG [ab2262ec] Command: cd /home/deploy/Codejar/releases/20191029224139 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/Codejar/shared/bundle --jobs 4 --without development test --deployment --quiet )
+  INFO [ab2262ec] Finished in 93.454 seconds with exit status 0 (successful).
+ DEBUG [ad6c8e98] Running if test ! -d /home/deploy/Codejar/releases/20191029224139; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224139'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [ad6c8e98] Command: if test ! -d /home/deploy/Codejar/releases/20191029224139; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224139'" 1>&2; false; fi
+ DEBUG [ad6c8e98] Finished in 1.226 seconds with exit status 0 (successful).
+  INFO [0e688fc6] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@142.93.72.43
+ DEBUG [0e688fc6] Command: cd /home/deploy/Codejar/releases/20191029224139 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [0e688fc6] 	Rails couldn't infer whether you are using multiple databases from your database.yml and can't generate the tasks for the non-primary databases. If you'd like to use this feature, please simplify your ERB.
+ DEBUG [0e688fc6] 	rake aborted!
+ DEBUG [0e688fc6] 	YAML syntax error occurred while parsing /home/deploy/Codejar/releases/20191029224139/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): found character that cannot start any token while scanning for the next token at line 27 column 13
+ DEBUG [0e688fc6] 	/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/configuration.rb:245:in `rescue in database_configuration'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/configuration.rb:220:in `database_configuration'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/railtie.rb:200:in `block (2 levels) in <class:Railtie>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:72:in `class_eval'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:72:in `block in execute_hook'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:62:in `with_execution_control'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:67:in `execute_hook'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:51:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/base.rb:327:in `<module:ActiveRecord>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/base.rb:27:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:23:in `require'
+/home/deploy/Codejar/releases/20191029224139/app/models/application_record.rb:1:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:16:in `require'
+/home/deploy/Codejar/releases/20191029224139/app/models/user.rb:1:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:16:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:282:in `const_get'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:282:in `block in constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `inject'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:320:in `get'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:83:in `to'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:78:in `modules'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:95:in `routes'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:162:in `default_used_route'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:72:in `initialize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:350:in `new'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:350:in `add_mapping'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:243:in `block in devise_for'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:242:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:242:in `devise_for'
+/home/deploy/Codejar/releases/20191029224139/config/routes.rb:15:in `block in <main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:429:in `instance_exec'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:429:in `eval_block'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:411:in `draw'
+/home/deploy/Codejar/releases/20191029224139/config/routes.rb:3:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `block in load_paths'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `load_paths'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:20:in `reload!'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:30:in `block in updater'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/file_update_checker.rb:83:in `execute'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:10:in `execute'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/finisher.rb:184:in `block in <module:Finisher>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:32:in `instance_exec'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:32:in `run'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:61:in `block in run_initializers'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:60:in `run_initializers'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:363:in `initialize!'
+/home/deploy/Codejar/releases/20191029224139/config/environment.rb:5:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:23:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:322:in `block in require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:288:in `load_dependency'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:322:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:339:in `require_environment!'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:515:in `block in run_tasks_blocks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+ DEBUG [0e688fc6] 	
+Caused by:
+ DEBUG [0e688fc6] 	Psych::SyntaxError: (<unknown>): found character that cannot start any token while scanning for the next token at line 27 column 13
+ DEBUG [0e688fc6] 	/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/configuration.rb:227:in `database_configuration'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/railtie.rb:200:in `block (2 levels) in <class:Railtie>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:72:in `class_eval'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:72:in `block in execute_hook'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:62:in `with_execution_control'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:67:in `execute_hook'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:51:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/base.rb:327:in `<module:ActiveRecord>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/base.rb:27:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:23:in `require'
+/home/deploy/Codejar/releases/20191029224139/app/models/application_record.rb:1:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:16:in `require'
+/home/deploy/Codejar/releases/20191029224139/app/models/user.rb:1:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:16:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:282:in `const_get'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:282:in `block in constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `inject'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:320:in `get'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:83:in `to'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:78:in `modules'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:95:in `routes'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:162:in `default_used_route'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:72:in `initialize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:350:in `new'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:350:in `add_mapping'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:243:in `block in devise_for'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:242:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:242:in `devise_for'
+/home/deploy/Codejar/releases/20191029224139/config/routes.rb:15:in `block in <main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:429:in `instance_exec'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:429:in `eval_block'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:411:in `draw'
+/home/deploy/Codejar/releases/20191029224139/config/routes.rb:3:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `block in load_paths'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `load_paths'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:20:in `reload!'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:30:in `block in updater'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/file_update_checker.rb:83:in `execute'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:10:in `execute'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/finisher.rb:184:in `block in <module:Finisher>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:32:in `instance_exec'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:32:in `run'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:61:in `block in run_initializers'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:60:in `run_initializers'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:363:in `initialize!'
+/home/deploy/Codejar/releases/20191029224139/config/environment.rb:5:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:23:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:322:in `block in require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:288:in `load_dependency'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:322:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:339:in `require_environment!'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:515:in `block in run_tasks_blocks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+ DEBUG [0e688fc6] 	Tasks: TOP => environment
+ DEBUG [0e688fc6] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 19:47:07 -0300 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [4f83dcf9] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@142.93.72.43
+ DEBUG [4f83dcf9] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [4f83dcf9] Finished in 5.552 seconds with exit status 0 (successful).
+ DEBUG [b1199d5a] Running /usr/bin/env which passenger as deploy@142.93.72.43
+ DEBUG [b1199d5a] Command: /usr/bin/env which passenger
+ DEBUG [b1199d5a] 	/usr/bin/passenger
+ DEBUG [b1199d5a] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [a74083b8] Running /usr/bin/env mkdir -p /tmp as deploy@142.93.72.43
+ DEBUG [a74083b8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [a74083b8] Finished in 1.227 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 100.0%
+  INFO [8b145507] Running /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh as deploy@142.93.72.43
+ DEBUG [8b145507] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh )
+  INFO [8b145507] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [b42049b5] Running /usr/bin/env git ls-remote https://github.com/gdguesser/codejar.git HEAD as deploy@142.93.72.43
+ DEBUG [b42049b5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git ls-remote https://github.com/gdguesser/codejar.git HEAD )
+ DEBUG [b42049b5] 	5203aea83447de291d5d31c4960407ea06a5f92b	HEAD
+  INFO [b42049b5] Finished in 1.164 seconds with exit status 0 (successful).
+  INFO [72abe03a] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases as deploy@142.93.72.43
+ DEBUG [72abe03a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases )
+  INFO [72abe03a] Finished in 1.089 seconds with exit status 0 (successful).
+  INFO [4deddf5f] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets as deploy@142.93.72.43
+ DEBUG [4deddf5f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets )
+  INFO [4deddf5f] Finished in 1.220 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 19:47:29 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [699ed198] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@142.93.72.43
+ DEBUG [699ed198] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+ DEBUG [699ed198] Finished in 4.888 seconds with exit status 0 (successful).
+ DEBUG [2a098b9a] Running /usr/bin/env which passenger as deploy@142.93.72.43
+ DEBUG [2a098b9a] Command: /usr/bin/env which passenger
+ DEBUG [2a098b9a] 	/usr/bin/passenger
+ DEBUG [2a098b9a] Finished in 1.226 seconds with exit status 0 (successful).
+  INFO [050100f8] Running /usr/bin/env mkdir -p /tmp as deploy@142.93.72.43
+ DEBUG [050100f8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /tmp )
+  INFO [050100f8] Finished in 1.226 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Codejar-production-gdguesser.sh 100.0%
+  INFO [f6fffe7a] Running /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh as deploy@142.93.72.43
+ DEBUG [f6fffe7a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env chmod 700 /tmp/git-ssh-Codejar-production-gdguesser.sh )
+  INFO [f6fffe7a] Finished in 1.132 seconds with exit status 0 (successful).
+  INFO [23523eef] Running /usr/bin/env git ls-remote https://github.com/gdguesser/codejar.git HEAD as deploy@142.93.72.43
+ DEBUG [23523eef] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git ls-remote https://github.com/gdguesser/codejar.git HEAD )
+ DEBUG [23523eef] 	5203aea83447de291d5d31c4960407ea06a5f92b	HEAD
+  INFO [23523eef] Finished in 1.254 seconds with exit status 0 (successful).
+  INFO [38bce718] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases as deploy@142.93.72.43
+ DEBUG [38bce718] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared /home/deploy/Codejar/releases )
+  INFO [38bce718] Finished in 1.609 seconds with exit status 0 (successful).
+  INFO [3b93d2da] Running /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets as deploy@142.93.72.43
+ DEBUG [3b93d2da] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/shared/log /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/shared/public/assets )
+  INFO [3b93d2da] Finished in 1.221 seconds with exit status 0 (successful).
+ DEBUG [031c52b5] Running [ -f /home/deploy/Codejar/current/REVISION ] as deploy@142.93.72.43
+ DEBUG [031c52b5] Command: [ -f /home/deploy/Codejar/current/REVISION ]
+ DEBUG [031c52b5] Finished in 1.228 seconds with exit status 1 (failed).
+ DEBUG [850502a4] Running [ -f /home/deploy/Codejar/repo/HEAD ] as deploy@142.93.72.43
+ DEBUG [850502a4] Command: [ -f /home/deploy/Codejar/repo/HEAD ]
+ DEBUG [850502a4] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/Codejar/repo
+ DEBUG [4e503268] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [4e503268] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [4e503268] Finished in 1.434 seconds with exit status 0 (successful).
+  INFO [5f5cf421] Running /usr/bin/env git remote set-url origin https://github.com/gdguesser/codejar.git as deploy@142.93.72.43
+ DEBUG [5f5cf421] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git remote set-url origin https://github.com/gdguesser/codejar.git )
+  INFO [5f5cf421] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [12a61185] Running /usr/bin/env git remote update --prune as deploy@142.93.72.43
+ DEBUG [12a61185] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [12a61185] 	Fetching origin
+  INFO [12a61185] Finished in 1.388 seconds with exit status 0 (successful).
+ DEBUG [bb66be69] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [bb66be69] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [bb66be69] Finished in 1.206 seconds with exit status 0 (successful).
+  INFO [8e6f9f01] Running /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029224745 as deploy@142.93.72.43
+ DEBUG [8e6f9f01] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029224745 )
+  INFO [8e6f9f01] Finished in 0.986 seconds with exit status 0 (successful).
+  INFO [e090ef91] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/Codejar/releases/20191029224745 as deploy@142.93.72.43
+ DEBUG [e090ef91] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/Codejar/releases/20191029224745 )
+  INFO [e090ef91] Finished in 2.251 seconds with exit status 0 (successful).
+ DEBUG [92ca0d38] Running if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [92ca0d38] Command: if test ! -d /home/deploy/Codejar/repo; then echo "Directory does not exist '/home/deploy/Codejar/repo'" 1>&2; false; fi
+ DEBUG [92ca0d38] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [87b9eed4] Running /usr/bin/env git rev-list --max-count=1 master as deploy@142.93.72.43
+ DEBUG [87b9eed4] Command: cd /home/deploy/Codejar/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Codejar-production-gdguesser.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [87b9eed4] 	5203aea83447de291d5d31c4960407ea06a5f92b
+ DEBUG [87b9eed4] Finished in 1.229 seconds with exit status 0 (successful).
+ DEBUG [1c9428b7] Running if test ! -d /home/deploy/Codejar/releases/20191029224745; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224745'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [1c9428b7] Command: if test ! -d /home/deploy/Codejar/releases/20191029224745; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224745'" 1>&2; false; fi
+ DEBUG [1c9428b7] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [1a6eff3f] Running /usr/bin/env echo "5203aea83447de291d5d31c4960407ea06a5f92b" > REVISION as deploy@142.93.72.43
+ DEBUG [1a6eff3f] Command: cd /home/deploy/Codejar/releases/20191029224745 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env echo "5203aea83447de291d5d31c4960407ea06a5f92b" > REVISION )
+  INFO [1a6eff3f] Finished in 1.230 seconds with exit status 0 (successful).
+  INFO [29793c51] Running /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029224745 /home/deploy/Codejar/releases/20191029224745/tmp /home/deploy/Codejar/releases/20191029224745/vendor /home/deploy/Codejar/releases/20191029224745/public as deploy@142.93.72.43
+ DEBUG [29793c51] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env mkdir -p /home/deploy/Codejar/releases/20191029224745 /home/deploy/Codejar/releases/20191029224745/tmp /home/deploy/Codejar/releases/20191029224745/vendor /home/deploy/Codejar/releases/20191029224745/public )
+  INFO [29793c51] Finished in 1.226 seconds with exit status 0 (successful).
+ DEBUG [e0648b98] Running [ -L /home/deploy/Codejar/releases/20191029224745/log ] as deploy@142.93.72.43
+ DEBUG [e0648b98] Command: [ -L /home/deploy/Codejar/releases/20191029224745/log ]
+ DEBUG [e0648b98] Finished in 1.331 seconds with exit status 1 (failed).
+ DEBUG [beb5e306] Running [ -d /home/deploy/Codejar/releases/20191029224745/log ] as deploy@142.93.72.43
+ DEBUG [beb5e306] Command: [ -d /home/deploy/Codejar/releases/20191029224745/log ]
+ DEBUG [beb5e306] Finished in 1.230 seconds with exit status 0 (successful).
+  INFO [d9aef6cd] Running /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029224745/log as deploy@142.93.72.43
+ DEBUG [d9aef6cd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029224745/log )
+  INFO [d9aef6cd] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [56ba041e] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/log /home/deploy/Codejar/releases/20191029224745/log as deploy@142.93.72.43
+ DEBUG [56ba041e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/log /home/deploy/Codejar/releases/20191029224745/log )
+  INFO [56ba041e] Finished in 1.229 seconds with exit status 0 (successful).
+ DEBUG [1fb3efdc] Running [ -L /home/deploy/Codejar/releases/20191029224745/tmp/pids ] as deploy@142.93.72.43
+ DEBUG [1fb3efdc] Command: [ -L /home/deploy/Codejar/releases/20191029224745/tmp/pids ]
+ DEBUG [1fb3efdc] Finished in 1.227 seconds with exit status 1 (failed).
+ DEBUG [f1b9aa52] Running [ -d /home/deploy/Codejar/releases/20191029224745/tmp/pids ] as deploy@142.93.72.43
+ DEBUG [f1b9aa52] Command: [ -d /home/deploy/Codejar/releases/20191029224745/tmp/pids ]
+ DEBUG [f1b9aa52] Finished in 1.022 seconds with exit status 1 (failed).
+  INFO [6422587c] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/releases/20191029224745/tmp/pids as deploy@142.93.72.43
+ DEBUG [6422587c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/pids /home/deploy/Codejar/releases/20191029224745/tmp/pids )
+  INFO [6422587c] Finished in 1.126 seconds with exit status 0 (successful).
+ DEBUG [17c5ca6f] Running [ -L /home/deploy/Codejar/releases/20191029224745/tmp/cache ] as deploy@142.93.72.43
+ DEBUG [17c5ca6f] Command: [ -L /home/deploy/Codejar/releases/20191029224745/tmp/cache ]
+ DEBUG [17c5ca6f] Finished in 1.017 seconds with exit status 1 (failed).
+ DEBUG [4ec9a5fd] Running [ -d /home/deploy/Codejar/releases/20191029224745/tmp/cache ] as deploy@142.93.72.43
+ DEBUG [4ec9a5fd] Command: [ -d /home/deploy/Codejar/releases/20191029224745/tmp/cache ]
+ DEBUG [4ec9a5fd] Finished in 1.031 seconds with exit status 0 (successful).
+  INFO [9ea9b7ef] Running /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029224745/tmp/cache as deploy@142.93.72.43
+ DEBUG [9ea9b7ef] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env rm -rf /home/deploy/Codejar/releases/20191029224745/tmp/cache )
+  INFO [9ea9b7ef] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [cb2b33ca] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/releases/20191029224745/tmp/cache as deploy@142.93.72.43
+ DEBUG [cb2b33ca] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/cache /home/deploy/Codejar/releases/20191029224745/tmp/cache )
+  INFO [cb2b33ca] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [bd2292a4] Running [ -L /home/deploy/Codejar/releases/20191029224745/tmp/sockets ] as deploy@142.93.72.43
+ DEBUG [bd2292a4] Command: [ -L /home/deploy/Codejar/releases/20191029224745/tmp/sockets ]
+ DEBUG [bd2292a4] Finished in 1.126 seconds with exit status 1 (failed).
+ DEBUG [0d4b1dfa] Running [ -d /home/deploy/Codejar/releases/20191029224745/tmp/sockets ] as deploy@142.93.72.43
+ DEBUG [0d4b1dfa] Command: [ -d /home/deploy/Codejar/releases/20191029224745/tmp/sockets ]
+ DEBUG [0d4b1dfa] Finished in 1.230 seconds with exit status 1 (failed).
+  INFO [4bcfc502] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/releases/20191029224745/tmp/sockets as deploy@142.93.72.43
+ DEBUG [4bcfc502] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/tmp/sockets /home/deploy/Codejar/releases/20191029224745/tmp/sockets )
+  INFO [4bcfc502] Finished in 1.228 seconds with exit status 0 (successful).
+ DEBUG [8c7fd8e6] Running [ -L /home/deploy/Codejar/releases/20191029224745/vendor/bundle ] as deploy@142.93.72.43
+ DEBUG [8c7fd8e6] Command: [ -L /home/deploy/Codejar/releases/20191029224745/vendor/bundle ]
+ DEBUG [8c7fd8e6] Finished in 1.229 seconds with exit status 1 (failed).
+ DEBUG [552ae7ae] Running [ -d /home/deploy/Codejar/releases/20191029224745/vendor/bundle ] as deploy@142.93.72.43
+ DEBUG [552ae7ae] Command: [ -d /home/deploy/Codejar/releases/20191029224745/vendor/bundle ]
+ DEBUG [552ae7ae] Finished in 2.664 seconds with exit status 1 (failed).
+  INFO [768d4c3f] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/releases/20191029224745/vendor/bundle as deploy@142.93.72.43
+ DEBUG [768d4c3f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/vendor/bundle /home/deploy/Codejar/releases/20191029224745/vendor/bundle )
+  INFO [768d4c3f] Finished in 1.225 seconds with exit status 0 (successful).
+ DEBUG [c3fce283] Running [ -L /home/deploy/Codejar/releases/20191029224745/.bundle ] as deploy@142.93.72.43
+ DEBUG [c3fce283] Command: [ -L /home/deploy/Codejar/releases/20191029224745/.bundle ]
+ DEBUG [c3fce283] Finished in 1.228 seconds with exit status 1 (failed).
+ DEBUG [6451cfdd] Running [ -d /home/deploy/Codejar/releases/20191029224745/.bundle ] as deploy@142.93.72.43
+ DEBUG [6451cfdd] Command: [ -d /home/deploy/Codejar/releases/20191029224745/.bundle ]
+ DEBUG [6451cfdd] Finished in 1.228 seconds with exit status 1 (failed).
+  INFO [7bcca67a] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/releases/20191029224745/.bundle as deploy@142.93.72.43
+ DEBUG [7bcca67a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/.bundle /home/deploy/Codejar/releases/20191029224745/.bundle )
+  INFO [7bcca67a] Finished in 1.037 seconds with exit status 0 (successful).
+ DEBUG [39e94c50] Running [ -L /home/deploy/Codejar/releases/20191029224745/public/system ] as deploy@142.93.72.43
+ DEBUG [39e94c50] Command: [ -L /home/deploy/Codejar/releases/20191029224745/public/system ]
+ DEBUG [39e94c50] Finished in 1.214 seconds with exit status 1 (failed).
+ DEBUG [ebbca30e] Running [ -d /home/deploy/Codejar/releases/20191029224745/public/system ] as deploy@142.93.72.43
+ DEBUG [ebbca30e] Command: [ -d /home/deploy/Codejar/releases/20191029224745/public/system ]
+ DEBUG [ebbca30e] Finished in 1.230 seconds with exit status 1 (failed).
+  INFO [76c0ac45] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/releases/20191029224745/public/system as deploy@142.93.72.43
+ DEBUG [76c0ac45] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/system /home/deploy/Codejar/releases/20191029224745/public/system )
+  INFO [76c0ac45] Finished in 1.226 seconds with exit status 0 (successful).
+ DEBUG [72779459] Running [ -L /home/deploy/Codejar/releases/20191029224745/public/uploads ] as deploy@142.93.72.43
+ DEBUG [72779459] Command: [ -L /home/deploy/Codejar/releases/20191029224745/public/uploads ]
+ DEBUG [72779459] Finished in 1.232 seconds with exit status 1 (failed).
+ DEBUG [a42eef5d] Running [ -d /home/deploy/Codejar/releases/20191029224745/public/uploads ] as deploy@142.93.72.43
+ DEBUG [a42eef5d] Command: [ -d /home/deploy/Codejar/releases/20191029224745/public/uploads ]
+ DEBUG [a42eef5d] Finished in 1.227 seconds with exit status 1 (failed).
+  INFO [1552bf2d] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/releases/20191029224745/public/uploads as deploy@142.93.72.43
+ DEBUG [1552bf2d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/uploads /home/deploy/Codejar/releases/20191029224745/public/uploads )
+  INFO [1552bf2d] Finished in 1.025 seconds with exit status 0 (successful).
+ DEBUG [73475311] Running [ -L /home/deploy/Codejar/releases/20191029224745/public/assets ] as deploy@142.93.72.43
+ DEBUG [73475311] Command: [ -L /home/deploy/Codejar/releases/20191029224745/public/assets ]
+ DEBUG [73475311] Finished in 1.228 seconds with exit status 1 (failed).
+ DEBUG [e7f434a3] Running [ -d /home/deploy/Codejar/releases/20191029224745/public/assets ] as deploy@142.93.72.43
+ DEBUG [e7f434a3] Command: [ -d /home/deploy/Codejar/releases/20191029224745/public/assets ]
+ DEBUG [e7f434a3] Finished in 1.226 seconds with exit status 1 (failed).
+  INFO [d20e3cb9] Running /usr/bin/env ln -s /home/deploy/Codejar/shared/public/assets /home/deploy/Codejar/releases/20191029224745/public/assets as deploy@142.93.72.43
+ DEBUG [d20e3cb9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; /usr/bin/env ln -s /home/deploy/Codejar/shared/public/assets /home/deploy/Codejar/releases/20191029224745/public/assets )
+  INFO [d20e3cb9] Finished in 1.193 seconds with exit status 0 (successful).
+ DEBUG [4ac01da0] Running if test ! -d /home/deploy/Codejar/releases/20191029224745; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224745'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [4ac01da0] Command: if test ! -d /home/deploy/Codejar/releases/20191029224745; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224745'" 1>&2; false; fi
+ DEBUG [4ac01da0] Finished in 1.160 seconds with exit status 0 (successful).
+ DEBUG [5c5a62c5] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/Codejar/shared/bundle as deploy@142.93.72.43
+ DEBUG [5c5a62c5] Command: cd /home/deploy/Codejar/releases/20191029224745 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/Codejar/shared/bundle )
+ DEBUG [5c5a62c5] 	The Gemfile's dependencies are satisfied
+ DEBUG [5c5a62c5] Finished in 1.368 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [333cbd34] Running if test ! -d /home/deploy/Codejar/releases/20191029224745; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224745'" 1>&2; false; fi as deploy@142.93.72.43
+ DEBUG [333cbd34] Command: if test ! -d /home/deploy/Codejar/releases/20191029224745; then echo "Directory does not exist '/home/deploy/Codejar/releases/20191029224745'" 1>&2; false; fi
+ DEBUG [333cbd34] Finished in 1.189 seconds with exit status 0 (successful).
+  INFO [d0637038] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@142.93.72.43
+ DEBUG [d0637038] Command: cd /home/deploy/Codejar/releases/20191029224745 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.5" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [d0637038] 	Rails couldn't infer whether you are using multiple databases from your database.yml and can't generate the tasks for the non-primary databases. If you'd like to use this feature, please simplify your ERB.
+ DEBUG [d0637038] 	rake aborted!
+ DEBUG [d0637038] 	YAML syntax error occurred while parsing /home/deploy/Codejar/releases/20191029224745/config/database.yml. Please note that YAML must be consistently indented using spaces. Tabs are not allowed. Error: (<unknown>): found character that cannot start any token while scanning for the next token at line 27 column 13
+ DEBUG [d0637038] 	/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/configuration.rb:245:in `rescue in database_configuration'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/configuration.rb:220:in `database_configuration'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/railtie.rb:200:in `block (2 levels) in <class:Railtie>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:72:in `class_eval'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:72:in `block in execute_hook'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:62:in `with_execution_control'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:67:in `execute_hook'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:51:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/base.rb:327:in `<module:ActiveRecord>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/base.rb:27:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:23:in `require'
+/home/deploy/Codejar/releases/20191029224745/app/models/application_record.rb:1:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:16:in `require'
+/home/deploy/Codejar/releases/20191029224745/app/models/user.rb:1:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:16:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:282:in `const_get'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:282:in `block in constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `inject'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:320:in `get'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:83:in `to'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:78:in `modules'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:95:in `routes'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:162:in `default_used_route'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:72:in `initialize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:350:in `new'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:350:in `add_mapping'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:243:in `block in devise_for'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:242:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:242:in `devise_for'
+/home/deploy/Codejar/releases/20191029224745/config/routes.rb:15:in `block in <main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:429:in `instance_exec'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:429:in `eval_block'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:411:in `draw'
+/home/deploy/Codejar/releases/20191029224745/config/routes.rb:3:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `block in load_paths'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `load_paths'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:20:in `reload!'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:30:in `block in updater'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/file_update_checker.rb:83:in `execute'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:10:in `execute'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/finisher.rb:184:in `block in <module:Finisher>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:32:in `instance_exec'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:32:in `run'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:61:in `block in run_initializers'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:60:in `run_initializers'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:363:in `initialize!'
+/home/deploy/Codejar/releases/20191029224745/config/environment.rb:5:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:23:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:322:in `block in require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:288:in `load_dependency'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:322:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:339:in `require_environment!'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:515:in `block in run_tasks_blocks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+ DEBUG [d0637038] 	
+Caused by:
+ DEBUG [d0637038] 	Psych::SyntaxError: (<unknown>): found character that cannot start any token while scanning for the next token at line 27 column 13
+ DEBUG [d0637038] 	/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/configuration.rb:227:in `database_configuration'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/railtie.rb:200:in `block (2 levels) in <class:Railtie>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:72:in `class_eval'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:72:in `block in execute_hook'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:62:in `with_execution_control'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:67:in `execute_hook'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:51:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/base.rb:327:in `<module:ActiveRecord>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activerecord-6.0.0.rc2/lib/active_record/base.rb:27:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:23:in `require'
+/home/deploy/Codejar/releases/20191029224745/app/models/application_record.rb:1:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:16:in `require'
+/home/deploy/Codejar/releases/20191029224745/app/models/user.rb:1:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:16:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:282:in `const_get'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:282:in `block in constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `inject'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/inflector/methods.rb:280:in `constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:320:in `get'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:83:in `to'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:78:in `modules'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:95:in `routes'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:162:in `default_used_route'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/mapping.rb:72:in `initialize'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:350:in `new'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise.rb:350:in `add_mapping'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:243:in `block in devise_for'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:242:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/devise-4.7.1/lib/devise/rails/routes.rb:242:in `devise_for'
+/home/deploy/Codejar/releases/20191029224745/config/routes.rb:15:in `block in <main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:429:in `instance_exec'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:429:in `eval_block'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/actionpack-6.0.0.rc2/lib/action_dispatch/routing/route_set.rb:411:in `draw'
+/home/deploy/Codejar/releases/20191029224745/config/routes.rb:3:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:54:in `load'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `block in load_paths'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `each'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:41:in `load_paths'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:20:in `reload!'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:30:in `block in updater'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/file_update_checker.rb:83:in `execute'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/routes_reloader.rb:10:in `execute'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application/finisher.rb:184:in `block in <module:Finisher>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:32:in `instance_exec'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:32:in `run'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:61:in `block in run_initializers'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/initializable.rb:60:in `run_initializers'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:363:in `initialize!'
+/home/deploy/Codejar/releases/20191029224745/config/environment.rb:5:in `<main>'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:22:in `block in require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/loaded_features_index.rb:92:in `register'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require_with_bootsnap_lfi'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/bootsnap-1.4.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/zeitwerk-2.2.0/lib/zeitwerk/kernel.rb:23:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:322:in `block in require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:288:in `load_dependency'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/activesupport-6.0.0.rc2/lib/active_support/dependencies.rb:322:in `require'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:339:in `require_environment!'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/railties-6.0.0.rc2/lib/rails/application.rb:515:in `block in run_tasks_blocks'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+/home/deploy/Codejar/shared/bundle/ruby/2.6.0/gems/rake-12.3.3/exe/rake:27:in `<top (required)>'
+/home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `load'
+/home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
+ DEBUG [d0637038] 	Tasks: TOP => environment
+ DEBUG [d0637038] 	(See full trace by running task with --trace)
