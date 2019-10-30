@@ -2004,3 +2004,8 @@ Caused by:
 /home/deploy/.rbenv/versions/2.6.5/bin/bundle:23:in `<main>'
  DEBUG [d0637038] 	Tasks: TOP => environment
  DEBUG [d0637038] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-29 22:51:17 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [577cc27c] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@142.93.72.43
+ DEBUG [577cc27c] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
