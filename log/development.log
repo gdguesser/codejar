@@ -6039,3 +6039,39 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 5051)
 
 
+Started GET "/" for ::1 at 2019-10-30 15:30:11 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 379)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:51
+Completed 200 OK in 1487ms (Views: 1477.5ms | ActiveRecord: 1.6ms | Allocations: 1504014)
+
+
+Started GET "/blog" for ::1 at 2019-10-30 15:30:15 -0300
+Processing by BlogController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 97)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 6492)
+
+
+Started GET "/dashboard" for ::1 at 2019-10-30 15:30:17 -0300
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 90)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 6469)
+
+
+Started GET "/" for ::1 at 2019-10-30 15:30:18 -0300
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:51
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 5086)
+
+
