@@ -65,7 +65,9 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
-  config.hosts << "41c1f3ac.ngrok.io"
+  config.hosts << "99bb8af6.ngrok.io"
+  config.hosts << "http://a9141e48.ngrok.io"
+  config.hosts << "c7e52a04.ngrok.io"
   config.middleware.use(IPinfoMiddleware, {
     token: Rails.application.credentials.dig(:ipinfo_token)
   })

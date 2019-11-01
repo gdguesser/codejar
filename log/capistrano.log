@@ -2009,3 +2009,8 @@ Caused by:
   INFO ---------------------------------------------------------------------------
  DEBUG [577cc27c] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@142.93.72.43
  DEBUG [577cc27c] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-10-30 18:52:01 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f188c6d3] Running [ -d $HOME/.rbenv/versions/2.6.5 ] as deploy@142.93.72.43
+ DEBUG [f188c6d3] Command: [ -d $HOME/.rbenv/versions/2.6.5 ]
