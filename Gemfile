@@ -20,8 +20,19 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+
+#gems to post system
+gem 'bulma-rails', '~> 0.7.5'
+gem 'simple_form', '~> 5.0', '>= 5.0.1'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+gem 'rolify', '~> 5.2'
+gem 'cancancan', '~> 3.0', '>= 3.0.1'
+gem 'redcarpet', '~> 3.5'
+gem 'coderay', '~> 1.1', '>= 1.1.2'
 
 #Capistrano gem
 gem 'capistrano', '~> 3.11'
